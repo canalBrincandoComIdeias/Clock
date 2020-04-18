@@ -64,23 +64,79 @@ Clock myClock;
 	Return:
 	- true if both times are iqual. Otherwise it returns false. The comparison accuracy is minute.  (bool)
 
-
-	//Adicao
 	horario adicionaHoras(horario origem, int horas);
+	//Adds or subtracts hours to specified time. -> Adiciona horas a um horario especificado
+	Parameters:
+	- horario origem: 	to inform the time to add the hours -> Informa o horario para que as horas sejam adicionadas
+	- int horas:			to inform the hours to be added. Negative value will subtract - Informa as horas para serem adicionadas. Valores negativos irão subtrair
+	Return: 
+	- the time with the hours added or subtracted. (horario)
+
 	horario adicionaMinutos(horario origem, int minutos);
+	//Adds or subtracts minutes to specified time. -> Adiciona minutos a um horario especificado
+	Parameters:
+	- horario origem: 	to inform the time to add the minutes -> Informa o horario para que os minutos sejam adicionados
+	- int minutos:		to inform the minutes to be added. Negative value will subtract - Informa os minutos para serem adicionados. Valores negativos irão subtrair
+	Return: 
+	- the time with the minutes added or subtracted. (horario)
+
 	horario adicionaSegundos(horario origem, int segundos);
+	//Adds or subtracts seconds to specified time. -> Adiciona segundos a um horario especificado
+	Parameters:
+	- horario origem: 	to inform the time to add the seconds -> Informa o horario para que os segundos sejam adicionados
+	- int segundos:		to inform the seconds to be added. Negative value will subtract - Informa os segundos para serem adicionados. Valores negativos irão subtrair
+	Return: 
+	- the time with the minutes added or subtracted. (horario)
+
     horario adicionaMilesimos(horario origem, int milesimos);
+	//Adds or subtracts milliseconds to specified time. -> Adiciona milisegundos a um horario especificado
+	Parameters:
+	- horario origem: 	to inform the time to add the milliseconds -> Informa o horario para que os milisegundos sejam adicionados
+	- int milesimos:		to inform the miliseconds to be added. Negative value will subtract - Informa os milisegundos para serem adicionados. Valores negativos irão subtrair
+	Return: 
+	- the time with the miliseconds added or subtracted. (horario)
 
-	//Conversão
 	uint32_t horarioParaMilesimo(horario origem);
+	//Converts time to milliseconds. -> Converte horario para milisegundos
+	Parameters:
+	- horario origem: 	to inform the time to be converted to milliseconds -> Para informar o horario a ser convertido para milisegundos
+	Return: 
+	- milliseconds from informed time -> milisegundos do horario informado. (uint32_t = unsigned long)
+
 	uint32_t horarioParaSegundos(horario origem);
+	//Converts time to seconds. -> Converte horario para segundos
+	Parameters:
+	- horario origem: 	to inform the time to be converted to seconds -> Para informar o horario a ser convertido para segundos
+	Return: 
+	- seconds from informed time -> seconds do horario informado. (uint32_t = unsigned long)
+
 	uint32_t horarioParaMinutos(horario origem);
+	//Converts time to minutes. -> Converte horario para minutos
+	Parameters:
+	- horario origem: 	to inform the time to be converted to minutes -> Para informar o horario a ser convertido para minutos
+	Return: 
+	- minutes from informed time -> minutos do horario informado. (uint32_t = unsigned long)
+
 	horario milesimoParaHorario(uint32_t origem);
+	//Converts milliseconds to time. -> Converte milisegundos em horario
+	Parameters:
+	- uint32_t origem: 	to inform milliseconds to be converted to time -> Para informar os milisegundos a serem convertidos para horario
+	Return: 
+	- time from informed milliseconds -> Horario dos milisegundos informados . (horario)
+
 	String horaParaTexto(horario origem);
+	//Converts time to text in the formmat hh:mm:ss. -> Converte horario em texto no formato hh:mm:ss
+	Parameters:
+	- horario origem: 	to inform the time to be converted to text -> Para informar o horario a ser convertido em texto
+	Return: 
+	- Formated text with the informed time -> Texto formatado com o horario informado convertido . (String)
 
-	//Ajuste do relogio quando o millis() zerar (a cada 50 dias aprox.)
 	void quandoMillisZerar();
-
+	//Adjusts the clock when millis() turns to zero (up to 50 days) -> Ajuste do relogio quando o millis() zerar (a cada 50 dias aprox.)
+	Parameters:
+	- none
+	Return: 
+	- none
 
 
 == License ==
