@@ -23,16 +23,47 @@ Clock myClock;
 	- byte minuto:	to inform the minute 0 to 59 -> Para informar o minuto entre 0 e 59
 	- byte segundo:	to inform the second 0 to 59 -> Para informar o segundo entre 0 e 59
 	Return:
-	- void
-
-	//Retorna o horario atual
+	- none (void)
+	
 	horario horarioAtual();
+	//Returns the current time -> Retorna o horario atual
+	Parameters:
+	- none
+	Return:
+	- current time (horario)
 
-	//Comparações entre dois horarios
 	bool horarioMenor(horario valor1, horario valor2);
+	//Checks whether a time is smaller than the other -> Verifica se um horario é menor que o outro
+	Parameters:
+	- horario valor1:	to inform the first time to be compared -> Para informar o primeiro horario a ser informado
+	- horario valor2:	to inform the second time to be compared -> Para informar o segundo horario a ser informado
+	Return:
+	- true if first time is smaller than the second. Otherwise it returns false (bool)
+	
 	bool horarioMaior(horario valor1, horario valor2);
+	//Checks whether a time is longer than the other -> Verifica se um horario é maior que o outro
+	Parameters:
+	- horario valor1:	to inform the first time to be compared -> Para informar o primeiro horario a ser informado
+	- horario valor2:	to inform the second time to be compared -> Para informar o segundo horario a ser informado
+	Return:
+	- true if first time is longer than the second. Otherwise it returns false (bool)
+
 	bool horarioIgual(horario valor1, horario valor2);
+	//Checks if two times are equal with second accuracy -> Verifica se dois horarios são iguais com precisão de segundos
+	Parameters:
+	- horario valor1:	to inform the first time to be compared -> Para informar o primeiro horario a ser informado
+	- horario valor2:	to inform the second time to be compared -> Para informar o segundo horario a ser informado
+	Return:
+	- true if both times are iqual. Otherwise it returns false. The comparison accuracy is second.  (bool)
+	
 	bool horaMinutoIgual(horario valor1, horario valor2);
+	//Checks if two times are equal with minute accuracy -> Verifica se dois horarios são iguais com precisão de minutos
+	Parameters:
+	- horario valor1:	to inform the first time to be compared -> Para informar o primeiro horario a ser informado
+	- horario valor2:	to inform the second time to be compared -> Para informar o segundo horario a ser informado
+	Return:
+	- true if both times are iqual. Otherwise it returns false. The comparison accuracy is minute.  (bool)
+
 
 	//Adicao
 	horario adicionaHoras(horario origem, int horas);
