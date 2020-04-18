@@ -8,6 +8,14 @@ https://github.com/canalBrincandoComIdeias
 
 == Reference ==
 
+=== Include ===
+#include "Clock.h"
+
+=== Instance ===
+Clock myClock;
+
+
+
 
 == License ==
 
