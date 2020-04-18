@@ -5,6 +5,10 @@ It substitutes a RTC module but needs to configure time each time Arduino turns 
 For more information about this library please visit us at
 https://github.com/canalBrincandoComIdeias
 
+
+== Reference ==
+
+
 == License ==
 
 Copyright (c) 2010 Arduino LLC. All right reserved.
