@@ -16,7 +16,7 @@ Clock myClock;
 
 === Methods ===
 
-    void ajustaHorario(byte hora, byte minuto, byte segundo);
+	void ajustaHorario(byte hora, byte minuto, byte segundo);
 	//Adjusts the time (to be used on SETUP) -> Acerta o horario (para uso no SETUP)
 	Parameters:
 	- byte hora:	to inform the hour between 0 and 23 -> Para informar a hora entre 0 e 23
