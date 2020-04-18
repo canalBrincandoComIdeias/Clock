@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map For [nome da biblioteca]
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1) - Tipos de Dados
+#######################################
+
+Clock	 KEYWORD1	Clock
+horario  KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2) - Métodos e Funções
+#######################################
+
+ajustaHorario	KEYWORD2
+horarioAtual	KEYWORD2
+horarioMenor	KEYWORD2
+horarioMaior	KEYWORD2
+horarioIgual	KEYWORD2
+horaMinutoIgual	KEYWORD2
+adicionaHoras	KEYWORD2
+adicionaMinutos	KEYWORD2
+adicionaSegundos	KEYWORD2
+adicionaMilesimos	KEYWORD2
+horarioParaMilesimo	KEYWORD2
+horarioParaSegundos	KEYWORD2
+horarioParaMinutos	KEYWORD2
+milesimoParaHorario	KEYWORD2
+horaParaTexto		KEYWORD2
+quandoMillisZerar	KEYWORD2
+
+#######################################
+# Constants (LITERAL1) - Constantes
+#######################################
+
