@@ -23,6 +23,8 @@ class Clock
 	//Comparações entre dois horarios
 	bool horarioMenor(horario valor1, horario valor2);
 	bool horarioMaior(horario valor1, horario valor2);
+	bool horarioMenorOuIgual(horario valor1, horario valor2);
+	bool horarioMaiorOuIgual(horario valor1, horario valor2);	
 	bool horarioIgual(horario valor1, horario valor2);
 	bool horaMinutoIgual(horario valor1, horario valor2);
 

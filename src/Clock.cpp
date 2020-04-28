@@ -25,6 +25,14 @@ bool Clock::horarioMaior(horario valor1, horario valor2) {
 	return horarioParaMilesimo(valor1) > horarioParaMilesimo(valor2);
 }
 
+bool Clock::horarioMenorOuIgual(horario valor1, horario valor2) {
+	return horarioParaMilesimo(valor1) <= horarioParaMilesimo(valor2);
+}
+
+bool Clock::horarioMaiorOuIgual(horario valor1, horario valor2) {
+	return horarioParaMilesimo(valor1) >= horarioParaMilesimo(valor2);
+}
+
 bool Clock::horarioIgual(horario valor1, horario valor2) {  
 	return horarioParaMilesimo(valor1) == horarioParaMilesimo(valor2);
 }

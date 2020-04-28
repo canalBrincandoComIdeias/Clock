@@ -50,7 +50,7 @@ void loop() {
   for (int nL = 0; nL < devices; nL++ ) {
     if (!ligado[nL] ) {
       horario proximoAcionamento = meuRelogio.adicionaMinutos(ultimoAcionamento[nL], tempoAcionamento[nL]);
-      bool    temQueAcionar      = meuRelogio.horarioMaior( agora, proximoAcionamento );
+      bool    temQueAcionar      = meuRelogio.horarioMaiorOuIgual( agora, proximoAcionamento );
 
       if ( temQueAcionar ) {
         acionaRele(nL);
@@ -62,7 +62,7 @@ void loop() {
 
     if (ligado[nL]) {
       horario proximoDesligamento = meuRelogio.adicionaMinutos(horarioAcionamento[nL], tempoIntervalo[nL]);
-      bool    temQueDesligar      = meuRelogio.horarioMaior( agora, proximoDesligamento );
+      bool    temQueDesligar      = meuRelogio.horarioMaiorOuIgual( agora, proximoDesligamento );
 
       if ( temQueDesligar ) {
         desligaRele(nL);
