@@ -48,6 +48,22 @@ Clock myClock;
 	Return:
 	- true if first time is longer than the second. Otherwise it returns false (bool)
 
+	bool horarioMenorOuIgual(horario valor1, horario valor2);
+	//Checks whether a time is smaller or equal than the other -> Verifica se um horario é menor ou igual ao outro
+	Parameters:
+	- horario valor1:	to inform the first time to be compared -> Para informar o primeiro horario a ser informado
+	- horario valor2:	to inform the second time to be compared -> Para informar o segundo horario a ser informado
+	Return:
+	- true if first time is smaller or equal than the second. Otherwise it returns false (bool)
+	
+	bool horarioMaiorOuIgual(horario valor1, horario valor2);
+	//Checks whether a time is longer or iqual than the other -> Verifica se um horario é maior ou igual ao outro
+	Parameters:
+	- horario valor1:	to inform the first time to be compared -> Para informar o primeiro horario a ser informado
+	- horario valor2:	to inform the second time to be compared -> Para informar o segundo horario a ser informado
+	Return:
+	- true if first time is longer or equal than the second. Otherwise it returns false (bool)
+
 	bool horarioIgual(horario valor1, horario valor2);
 	//Checks if two times are equal with second accuracy -> Verifica se dois horarios são iguais com precisão de segundos
 	Parameters:
