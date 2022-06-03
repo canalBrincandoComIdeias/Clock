@@ -1,26 +1,25 @@
-//Estrutura e tipo para armazenar um horario
+//Structure and type to store a time
 typedef struct {
   byte hora;
   byte minuto;
   byte segundo;
 } horario;
 
-//Quantos milesimos de segundos um dia possui
+// How many thousandths of a second does a day have
 #define milesimosNoDia 86400000
 
-//definição da classe Clock
-class Clock
-{
+// definition of the Clock class
+class Clock {
   public:
-    Clock();
+	Clock(byte horaInicial = 0, byte minutoInicial = 0, byte segundoInicial = 0);
 	
-	//Acerta o horario (para uso no SETUP)
-	void ajustaHorario(byte hora, byte minuto, byte segundo);
+	//Set the time (for use in SETUP)
+	void ajustaHorario(byte hora, byte minuto, byte segundo = 0);
 
-	//Retorna o horario atual
+	// Returns the current time
 	horario horarioAtual();
 
-	//Comparações entre dois horarios
+	// Comparisons between two schedules
 	bool horarioMenor(horario valor1, horario valor2);
 	bool horarioMaior(horario valor1, horario valor2);
 	bool horarioMenorOuIgual(horario valor1, horario valor2);
@@ -32,7 +31,7 @@ class Clock
 	horario adicionaHoras(horario origem, int horas);
 	horario adicionaMinutos(horario origem, int minutos);
 	horario adicionaSegundos(horario origem, int segundos);
-    horario adicionaMilesimos(horario origem, int milesimos);
+	horario adicionaMilesimos(horario origem, int milesimos);
 
 	//Conversão
 	uint32_t horarioParaMilesimo(horario origem);
@@ -41,12 +40,12 @@ class Clock
 	horario milesimoParaHorario(uint32_t origem);
 	String horaParaTexto(horario origem);
 
-	//Ajuste do relogio quando o millis() zerar (a cada 50 dias aprox.)
+	//Set clock when millis() resets (every 50 days approx.)
 	void quandoMillisZerar();
 
 
   private:
-    uint32_t milesimoInicial;
+	uint32_t milesimoInicial;
 	String strZero(int valor, byte digitos);
 	
 };

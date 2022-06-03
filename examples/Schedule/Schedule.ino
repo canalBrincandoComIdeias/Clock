@@ -10,13 +10,14 @@
 */
 
 // INCLUSÃO DE BIBLIOTECA
-#include "Clock.h" // DOWNLOAD: https://github.com/canalBrincandoComIdeias/Clock
+#include <Clock.h> // DOWNLOAD: https://github.com/canalBrincandoComIdeias/Clock
 
 // DEFINIÇÕES
 #define devices 2 // Número de devices
 
 // INSTANCIANDO OBJETOS
-Clock meuRelogio;
+Clock meuRelogio(12  ,30   , 0     );
+               //Hora Minuto Segundo
 
 // DECLARAÇÃO DE VARIÁVEIS
 byte pinRele[devices] = {13, 10};         // Pino dos devices, deve ter a mesma quantidade que a definição de devices

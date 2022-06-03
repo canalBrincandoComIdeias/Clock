@@ -6,13 +6,20 @@ For more information about this library please visit us at
 https://github.com/canalBrincandoComIdeias
 
 
-== Reference ==
+==== Reference ====
 
 === Include ===
-#include "Clock.h"
+#include <Clock.h>
 
 === Instance ===
-Clock myClock;
+	Clock myClock(byte horaInicial, byte minutoInicial, byte segundoInicial);
+	//It may not inform the parameters that it will take as 0
+	Parameters:
+	- byte horaInicial:	to inform the hour between 0 and 23 -> Para informar a hora entre 0 e 23
+	- byte minutoInicial:	to inform the minute 0 to 59 -> Para informar o minuto entre 0 e 59
+	- byte segundoInicial:	to inform the second 0 to 59 -> Para informar o segundo entre 0 e 59
+	Return:
+	- none (void)
 
 === Methods ===
 

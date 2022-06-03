@@ -1,7 +1,8 @@
 #include "Arduino.h"
 #include "Clock.h"
 
-Clock::Clock() {
+Clock::Clock(byte horaInicial, byte minutoInicial, byte segundoInicial) {
+	ajustaHorario(horaInicial, minutoInicial, segundoInicial);
 }
 
 void Clock::ajustaHorario(byte hora, byte minuto, byte segundo) {
